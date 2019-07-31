@@ -62,10 +62,11 @@
             <scope>true</scope>
         </dependency>
         &lt;!&ndash;actuator监控&ndash;&gt;
+        -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>-->
+        </dependency>
     </dependencies>
 
     <build>
