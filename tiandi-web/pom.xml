@@ -33,10 +33,6 @@
             <groupId>com.tiandi</groupId>
             <artifactId>tiandi-service</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.tiandi</groupId>
-            <artifactId>tiandi-web</artifactId>
-        </dependency>
 
 
         <!--基于spring MVC的web项目-->

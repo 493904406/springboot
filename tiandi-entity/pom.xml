@@ -12,4 +12,10 @@
     <artifactId>tiandi-entity</artifactId>
 
 
+    <dependencies>
+        <dependency>
+            <groupId>com.tiandi</groupId>
+            <artifactId>tiandi-common</artifactId>
+        </dependency>
+    </dependencies>
 </project>

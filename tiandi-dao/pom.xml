@@ -12,6 +12,18 @@
     <artifactId>tiandi-dao</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>com.tiandi</groupId>
+            <artifactId>tiandi-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.tiandi</groupId>
+            <artifactId>tiandi-entity</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+        </dependency>
         <!--&lt;!&ndash;操作redis&ndash;&gt;
         <dependency>
             <groupId>org.springframework.boot</groupId>

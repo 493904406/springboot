@@ -24,6 +24,8 @@
             <groupId>com.tiandi</groupId>
             <artifactId>tiandi-entity</artifactId>
         </dependency>
+
+
     </dependencies>
 
 </project>
