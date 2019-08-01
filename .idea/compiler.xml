@@ -6,8 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springbootweb" />
+        <module name="tiandi-api" />
+        <module name="tiandi-common" />
+        <module name="tiandi-dao" />
+        <module name="tiandi-entity" />
+        <module name="tiandi-service" />
+        <module name="tiandi-web" />
+        <module name="tiandiService" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tiandiService" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

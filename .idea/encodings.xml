@@ -2,5 +2,11 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tiandi-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tiandi-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tiandi-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tiandi-entity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tiandi-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tiandi-web" charset="UTF-8" />
   </component>
 </project>
