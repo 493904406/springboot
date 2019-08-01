@@ -1,4 +1,4 @@
-package app.service;
+package com.app.service;
 
 public interface TianDiService {
 }
