@@ -22,7 +22,7 @@
         </dependency>
         <dependency>
             <groupId>com.tiandi</groupId>
-            <artifactId>tiandi-entity</artifactId>
+            <artifactId>tiandi-domain</artifactId>
         </dependency>
 
 

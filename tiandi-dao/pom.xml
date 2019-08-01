@@ -18,12 +18,13 @@
         </dependency>
         <dependency>
             <groupId>com.tiandi</groupId>
-            <artifactId>tiandi-entity</artifactId>
+            <artifactId>tiandi-domain</artifactId>
         </dependency>
-        <dependency>
+
+        <!--<dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
-        </dependency>
+        </dependency>-->
         <!--&lt;!&ndash;操作redis&ndash;&gt;
         <dependency>
             <groupId>org.springframework.boot</groupId>
