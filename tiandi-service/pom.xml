@@ -11,5 +11,19 @@
 
     <artifactId>tiandi-service</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.tiandi</groupId>
+            <artifactId>tiandi-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.tiandi</groupId>
+            <artifactId>tiandi-dao</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.tiandi</groupId>
+            <artifactId>tiandi-entity</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
