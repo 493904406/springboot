@@ -21,29 +21,73 @@
             <artifactId>tiandi-domain</artifactId>
         </dependency>
 
-        <!--<dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-        </dependency>-->
-        <!--&lt;!&ndash;操作redis&ndash;&gt;
+
+        <!--操作redis-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
-        &lt;!&ndash;操作mongodb&ndash;&gt;
+        <!--操作mongodb-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
-        &lt;!&ndash;spring操作数据库mysql  用于将数据存入数据库的类和方法的集&ndash;&gt;
+        <!--spring操作数据库mysql  用于将数据存入数据库的类和方法的集-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
-        &lt;!&ndash;数据库相关&ndash;&gt;
+
+        <!--数据库相关-->
+          <dependency>
+           <groupId>com.alibaba</groupId>
+           <artifactId>druid-spring-boot-starter</artifactId>
+           <version>${druid.version}</version>
+       </dependency>
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>-->
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+       <dependency>
+           <groupId>mysql</groupId>
+           <artifactId>mysql-connector-java</artifactId>
+           <version>${mysql.version}</version>
+       </dependency>
+       <dependency>
+           <groupId>org.mybatis.spring.boot</groupId>
+           <artifactId>mybatis-spring-boot-starter</artifactId>
+           <version>${mybatis.spring.version}</version>
+       </dependency>
+        <dependency>
+            <groupId>org.mybatis.generator</groupId>
+            <artifactId>mybatis-generator-core</artifactId>
+            <version>${mybatis.generator.version}</version>
+        </dependency>
+
     </dependencies>
+
+    <build>
+        <plugins>
+            <!-- mybatis generator 自动生成代码插件 -->
+            <plugin>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-maven-plugin</artifactId>
+                <version>1.3.7</version>
+                <configuration>
+                    <configurationFile>${basedir}/src/main/resources/generator/generatorConfig.xml</configurationFile>
+                    <overwrite>true</overwrite>
+                    <verbose>true</verbose>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>Generate MyBatis Artifacts</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
 </project>

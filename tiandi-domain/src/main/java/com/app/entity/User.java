@@ -1,6 +1,7 @@
 package com.app.entity;
 
 public class User {
+    private Long id;
 
     private String name;
 
@@ -12,12 +13,20 @@ public class User {
 
     private String password;
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = name == null ? null : name.trim();
     }
 
     public Integer getAge() {
@@ -41,7 +50,7 @@ public class User {
     }
 
     public void setAccount(String account) {
-        this.account = account;
+        this.account = account == null ? null : account.trim();
     }
 
     public String getPassword() {
@@ -49,17 +58,6 @@ public class User {
     }
 
     public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public User() {
-    }
-
-    public User(String name, Integer age, Integer sex, String account, String password) {
-        this.name = name;
-        this.age = age;
-        this.sex = sex;
-        this.account = account;
-        this.password = password;
+        this.password = password == null ? null : password.trim();
     }
 }
