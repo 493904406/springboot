@@ -17,7 +17,6 @@
         <module>tiandi-service</module>
         <module>tiandi-common</module>
         <module>tiandi-api</module>
-        <module>tiandi-ui</module>
     </modules>
 
     <parent>
@@ -72,11 +71,7 @@
             <artifactId>tiandi-web</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>com.tiandi</groupId>
-            <artifactId>tiandi-ui</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+
 
 
     </dependencies>
