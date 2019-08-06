@@ -18,4 +18,6 @@ public class HelloController {
         ServiceResponse response = tianDiService.getUser();
         return ResponseEntityFactory.build(response);
     }
+
+
 }
